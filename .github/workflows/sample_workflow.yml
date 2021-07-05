@@ -18,3 +18,11 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
+      - name: Cloing git repository
+        run: |
+          git clone https://github.com/Akash119911/GitActions.git
+      - name: Checking our repository
+        run: |
+          pwd
+          ls -lrt
+          

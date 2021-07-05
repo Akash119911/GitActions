@@ -8,3 +8,13 @@ jobs:
     steps:
       - name: Check Job 1 steps
         run: echo "Welcome All"
+  sample-job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check job 2 steps or repository in-build environments
+        run: |
+          pwd
+          ls-lrt
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE

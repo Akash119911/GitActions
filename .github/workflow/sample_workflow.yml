@@ -1,0 +1,10 @@
+name: git hub actions sample
+
+on: [push]
+
+jobs:
+  sample-job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Job 1 steps
+        run: echo "Welcome All"

@@ -20,6 +20,8 @@ jobs:
           echo $GITHUB_WORKSPACE
       - name: Cloing git repository
         uses: actions/checkout@v2
+        with:
+          ref: testing_actions
       - name: Checking our repository
         run: |
           pwd

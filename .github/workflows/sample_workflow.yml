@@ -24,5 +24,5 @@ jobs:
       - name: Checking our repository
         run: |
           pwd
+          ls -a
           ls -lrt
-          
